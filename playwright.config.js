@@ -20,8 +20,12 @@ const config = ({
   //browser used
   use: {
     browserName : 'chromium',
+    launchOptions: {
+      args: ['--start-maximized'] // Buka browser dalam mode fullscreen
+    },
+    viewport: null, // Pastikan viewport mengikuti ukuran jendela
     
-    headless: false
+    headless: false,
   },
 
 });
